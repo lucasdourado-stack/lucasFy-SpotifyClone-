@@ -1,3 +1,5 @@
+import IconePlay from "../icones/IconePlay"
+
 const MusicaCard = ({ name, artist, cover }) => {
   return (
 
@@ -22,7 +24,7 @@ const MusicaCard = ({ name, artist, cover }) => {
         <h3 className="text-white font-bold text-sm truncate">{name}</h3>
         <p className="text-spotify-font-gray text-xs truncate">{artist}</p>
           <button className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center absolute bottom-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity shadow-xl hover:scale-105">
-            <span className="text-black font-bold">P</span>
+            <span className="text-black font-bold"><IconePlay/></span>
         </button>
       </div>
        
