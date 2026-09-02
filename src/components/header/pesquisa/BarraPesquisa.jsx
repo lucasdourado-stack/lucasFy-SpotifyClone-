@@ -1,4 +1,4 @@
-import IconeLupa from "./IconeLupa";
+import IconeLupa from "../../icones/IconeLupa";
 
 const BarraPesquisa = () => {
   return (

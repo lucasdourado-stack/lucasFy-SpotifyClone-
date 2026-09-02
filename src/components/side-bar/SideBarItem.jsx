@@ -1,10 +1,9 @@
-
-
-const SideBarItem = ({link, placeholder}) => {
+const SideBarItem = ({ link, label, icone: Icone }) => {
   return (
     <div>
         <a href={link} className="flex items-center gap-4 text-zinc-400 hover:text-white transition-colors font-semibold">
-          <div className="w-6 h-6 bg-zinc-300 rounded-sm"></div> {placeholder}
+         {Icone && <Icone />}
+         {label}
         </a>
     </div>
   )

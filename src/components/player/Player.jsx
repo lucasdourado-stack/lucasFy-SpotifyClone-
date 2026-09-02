@@ -1,7 +1,7 @@
 import ProgressBar from "./ProgressBar"
-import IconePular from "./IconePular";
-import IconeVoltar from "./IconeVoltar";
-import IconePausar from "./IconePausar";
+import IconePular from "../icones/IconePular";
+import IconeVoltar from "../icones/IconeVoltar";
+import IconePausar from "../icones/IconePausar";
 
 
 function Player() {
