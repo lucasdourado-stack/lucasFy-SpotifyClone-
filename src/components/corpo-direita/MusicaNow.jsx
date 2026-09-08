@@ -1,19 +1,21 @@
-import SobreArtista from "./SobreArtista"
+import SobreArtista from "./SobreArtista";
 
-const MusicaNow = ({name, cover, artist, sobre, sobreCover }) => {
+const MusicaNow = ({ name, cover, artist, info, artistCover }) => {
   return (
     <div className=" flex flex-col mt-4 gap-2">
-        <img src={cover} alt="capa-Musica" className="rounded-lg" />
-        <div className="mb-6">
-        <h2 className="text-white text-3xl font-bold  cursor-pointer">{name}</h2>
-        <p className="w-fit text-spotify-font-gray font-bold hover:text-white border-b border-transparent hover:border-white text-[12px] cursor-pointer">{artist}</p>
+      <img src={cover} alt="capa-Musica" className="rounded-lg" />
+      <div className="mb-6">
+        <h2 className="text-white text-3xl font-bold  cursor-pointer">
+          {name}
+        </h2>
+        <p className="w-fit text-spotify-font-gray font-bold hover:text-white border-b border-transparent hover:border-white text-[12px] cursor-pointer">
+          {artist}
+        </p>
+      </div>
 
-        </div>
-
-        <SobreArtista artist={artist} cover={sobreCover} sobre={sobre}/>
-        
+      <SobreArtista artist={artist} cover={artistCover} sobre={info} />
     </div>
-  )
-}
+  );
+};
 
-export default MusicaNow
+export default MusicaNow;
