@@ -37,11 +37,13 @@ export const menuItems = [
     id: 1,
     label: "Início",
     icone: IconeHome,
+    link: "",
   },
   {
     id: 2,
     label: "Buscar",
     icone: IconeLupa,
+    link: "busca-n-funciona",
   },
 ];
 
