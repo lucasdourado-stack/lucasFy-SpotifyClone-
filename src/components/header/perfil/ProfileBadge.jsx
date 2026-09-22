@@ -1,5 +1,4 @@
 import Avatar from "./Avatar";
-import Notifications from "./Notifications";
 import images from "../../../assets/images.png";
 
 function ProfileBadge() {
@@ -9,7 +8,6 @@ function ProfileBadge() {
         <Avatar imgUrl={images} />
 
         <a href="http://">Meu Perfil</a>
-        <Notifications count="5" />
       </div>
     </>
   );
