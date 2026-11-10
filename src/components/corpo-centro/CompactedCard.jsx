@@ -1,9 +1,6 @@
-
-
-function CompactedCard({titulo,  capa, descricao}) {
+function CompactedCard({ titulo, capa }) {
   return (
-    <div className="flex itemscenter h-16 w-full max-w-sm overflow-hidden rounded-md  bg-zinc-900 transition-colors hover:bg-zinc-800 cursor-pointer">
-
+    <div className="flex itemscenter h-13 w-full max-w-sm overflow-hidden rounded-md  bg-zinc-900 transition-colors hover:bg-zinc-800 cursor-pointer">
       <img
         src={capa}
         alt="Capa da playlist"
@@ -11,15 +8,8 @@ function CompactedCard({titulo,  capa, descricao}) {
       />
 
       <div className=" p-2 ">
-        <h1 className="text-lg font-bold text-white">
-          {titulo}
-        </h1>
-        <p className="text-spotify-font-gray">
-          {descricao}
-        </p>
-        
+        <h1 className="text-lg font-bold text-white">{titulo}</h1>
       </div>
-
     </div>
   );
 }
